@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home Page
+{% endblock %}
+
+{% block body %}
+<div class="card bg-dark text-white">
+    <img class= "titleimg mycard" src="{{ url_for('static', filename='books2.JPG')}}" alt="book_title_img">
+    <div class="card-img-overlay">
+      <h1 class="card-title mytitle" >BOOKS<br>&nbsp;&nbsp;&nbsp;&nbsp;.CO</h1>
+    </div>
+  </div>
+<p class="web_descp">
+    Deciding what to read next?<br>You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you insightful reviews.
+</p>
+<a class="homebtn" href="{{url_for('registration')}}"><div class="hbtntxt">Registeration</div></a><br>
+<a class="homebtn" href="{{url_for('login')}}"><div class="hbtntxt">Login</div></a>
+{% endblock %}

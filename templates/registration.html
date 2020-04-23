@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{%block title %}
+Registration
+{%endblock%}
+
+{%block body %}
+<div class="rtitle">Registration form</div>
+<form action="{{ url_for('registration')}}", method="POST">
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">First and last name</span>
+        </div>
+        <input type="text" required name="Firstname" class="form-control">
+        <input type="text" name="Lastname" class="form-control">    
+    </div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Userid</span>
+        </div>
+        <input type="text" required name="userid" class="form-control">   
+    </div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Create Password</span>
+        </div>
+        <input type="password" required name="password" class="form-control">   
+    </div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Enter Password Again</span>
+        </div>
+        <input type="password" required name="checkpassword" class="form-control">   
+    </div>
+<button class="btn">Register</button>    
+</form>
+{%endblock%}

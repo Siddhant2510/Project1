@@ -1,0 +1,30 @@
+{%extends "layout.html" %}
+
+{% block title %}
+Search
+{%endblock%}
+
+{%block body%}
+<a href="{{url_for('index')}}" class="btn btn-primary btn-right">Logout</a>
+<form action="{{url_for('search')}}", method="POST">
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">ISBN</span>
+        </div>
+        <input type="text" name="isbn" class="form-control">   
+    </div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Title</span>
+        </div>
+        <input type="text" name="title" class="form-control">   
+    </div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Author</span>
+        </div>
+        <input type="text" name="author" class="form-control">   
+    </div>
+    <button class="btn">Search</button>
+</form>
+{%endblock%}

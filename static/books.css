@@ -1,0 +1,94 @@
+.mycard{
+    height:80mm;
+}
+.mytitle{
+    color: black;
+    margin-left: 30mm;
+    font-size: 30mm;
+}
+.web_descp{
+    margin-top: 10mm;
+    font-size: 5mm;
+    margin-bottom: 10mm;
+}
+.homebtn{
+    display: inline-flex;
+    width: 30mm;
+    margin-bottom: 1mm;
+    padding-left: 8mm;
+    background-color: blue;
+    background-size: 30mm;
+    color: white;
+    padding: 2mm;
+    position: relative;
+    left: 45%;
+}
+.hbtntxt{
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
+}
+.homebtn:hover{
+    background-color: rgb(5, 5, 117);
+    color: white;
+    text-decoration: none;
+}
+.rtitle{
+    margin-top: 10mm;
+    text-align: center;
+    font-size: xx-large;
+}
+.btitle{
+    margin-top: 10mm;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: italic;
+}
+form{
+    margin-top: 10mm;
+}
+.btn{
+    margin-top: 10mm;
+    position: relative;
+    left: 45%;
+    background-color: blue;
+    color: white;
+}
+.boddy{
+    background-color: thistle;
+    background-position: center;
+}
+.btn:hover{
+    background-color: rgb(5, 5, 117);
+    color: white;
+}
+.backimg{
+    background-image: url('/static/img/book4.JPG');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.marginleft{
+    margin-left: 50mm;
+    margin-top: 10mm;
+}
+.bookslist{
+    color: white;
+}
+.bookslist:hover{
+    color: thistle;
+    text-decoration: none;
+}
+.myerror{
+    margin-top: 20mm;
+    text-align: center;
+}
+.btn-right{
+    margin-top: 10mm;
+    position: relative;
+    left: 90%;
+}
+.input_rating{
+    margin-bottom: 1mm;
+    width: 42mm;
+}

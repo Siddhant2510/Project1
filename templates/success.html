@@ -1,0 +1,13 @@
+{%extends "layout.html" %}
+
+{% block title %}
+Success
+{%endblock%}
+
+{%block body%}
+<div class="alert alert-success" role="alert" style="margin-top: 10mm;">
+    <h4 class="alert-heading">Successfully registered!</h4>
+    <p>You have Successfully registered to our website.<br>Learn more about different books from other's reviews, so you will not waste your time on trash and help other to classify books by your valuable reviews.</p>
+  </div>
+  <a href="{{url_for('login')}}" class="btn btn-primary">Login</a>
+{%endblock%}
